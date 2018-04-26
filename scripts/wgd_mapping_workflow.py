@@ -4,7 +4,6 @@ import os, sys, shutil
 main_folder = sys.argv[1]
 target_folder = os.path.join(main_folder, "01_mapping")
 script = os.path.join(main_folder, "scripts", "mapping.sh")
-trimmed_files_folder = sys.argv[2]
 
 genes = os.listdir(target_folder)
 
@@ -30,7 +29,7 @@ def main():
             for path, exon in paths_exons:
                 output_folder = os.path.join(gene_path, sp)
                 os.chdir(output_folder)
-                os.system("{0} {1} {2} {3} {4}".format(script, sp, exon, path, trimmed_files_folder))
+                os.system("{0} {1} {2} {3}".format(script, sp, exon, path))
 
 
 main()
