@@ -13,6 +13,6 @@ echo "start sorting"
 samtools sort $1_$2.bam -o $1_$2.sorted.bam;
 
 echo "start bam to sam conversion"
-samtools view$1_$2.sorted.bam -o $1_$2.sorted.sam;
+samtools view $1_$2.sorted.bam -o $1_$2.sorted.sam;
 
 echo "Done"
