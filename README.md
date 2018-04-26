@@ -2,7 +2,7 @@
 Identify all paralogs and assemble full sequences across all exons in a gene. 
 
 ## Usage
-'python wgd_mapping_workflow.py [path to working directory]'
+python wgd_mapping_workflow.py [path to working directory]
 
 ## Install
 
